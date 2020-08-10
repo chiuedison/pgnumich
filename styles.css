@@ -26,6 +26,43 @@ h2 {
 }
 
 
+
+
+
+/*HOME STYLES*/
+
+
+
+#home .carousel-item {
+    width: 100%;
+    height: 700px;
+    
+}
+
+
+.home-section {
+    z-index: 0;
+        
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45%;
+    
+    overflow: hidden;
+    
+    background-color: transparent;
+    box-shadow: 0px 0px 5px 3px #AAAAAA;
+    
+    align-content: center;
+}
+
+.home-carousel {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 #home-header {
     white-space: nowrap;
     
@@ -33,15 +70,16 @@ h2 {
     
     position: absolute;
 
-    z-index: 10;
+    z-index: 9;
+    
+    width: 100%;
+    height: 100%;
     
     text-align: center;
-    vertical-align: top;
+    vertical-align: center;
     
-    display: inline-block;
+    padding-top: 15%;
     
-    top: 30%;
-    left: 25%;
 }
 
 
@@ -106,15 +144,25 @@ h2 {
 }
 
 
-.buffer {
+.buffer- {
     background-color: transparent;
     z-index: -1;
     opacity: 1.0;
 
     width: 100%;
+}
+
+.buffer-small {
     height: 60px;
 }
 
+.buffer-medium {
+    height: 60px;
+}
+
+.buffer-large {
+    height: 150px;
+}
 
 
 
@@ -134,7 +182,7 @@ section {
 
 .section-box {
     background: white;
-    box-shadow: 0px 0px 2px 2px #EEEEEE;
+    /*box-shadow: 0px 0px 2px 2px #EEEEEE;*/
     
     height: inherit;
     width: 80%;
@@ -144,10 +192,6 @@ section {
     
     display: flex;
     flex-direction: column;
-}
-
-.section-box div {
-    margin: 30px;
 }
 
 #sections {
@@ -164,6 +208,21 @@ section {
     align-items: center;
 }
 
+.h-indented {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.v-indented {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.indented {
+    margin: 30px;
+}
+
+
 .outline {
     display: flex;
 }
@@ -174,6 +233,10 @@ section {
 
 .img-card {
     margin: 10px;
+    
+    border-radius: 2px;
+    
+    box-shadow: 0px 0px 2px 1px #AAAAAA;
 }
 
 #president h3 {
@@ -202,18 +265,15 @@ section {
 
 /*TABLE STYLES*/
 
-#pillars th,td {
-    padding: 5px 10px;
-    
+#pillars td {
     overflow: hidden;
 }
 
 
+
 #pillars table {
-    margin: 20px;
-    
     table-layout: fixed;
-    width: calc(100% - 40px);
+    width: 100%;
 }
 
 
@@ -239,6 +299,7 @@ section {
 
 
 /*NAVBAR STYLES*/
+
 #navbar {
     z-index: 1;
     
@@ -283,6 +344,77 @@ section {
 #navbar a:active {
     color: #FFCB05;
 }
+
+
+
+
+/*FOOTER STYLES*/
+
+#footer {
+    width: 100%;
+    height: 200px;
+    
+    background: transparent;
+    
+    box-shadow: 0px 0px 5px 3px #AAAAAA;
+    
+    text-align: center;
+}
+
+
+.fa {
+    z-index: 10;
+    
+    background-color: transparent;
+    color: black;
+    font-size: 30px;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    border-radius: 50%;
+    border: medium solid black;
+    
+    width: 32px;
+    height: 32px;
+    
+    padding: 5px;
+    margin: 5px 2px;
+        
+}
+
+.fa:hover {
+    
+    text-decoration: none;
+    
+    -webkit-animation: fa-fade-in 0.2s forwards 1;
+    animation: fa-fade-in 0.2s forwards 1;
+}
+
+
+
+
+
+
+
+#home-header a:hover {
+    
+}
+
+@-webkit-keyframes fa-fade-in {
+    from { background: transparent; color: black; border-color: black; }
+    to { background: white; color: #800000; border-color: #800000; }
+}
+
+@keyframes fa-fade-in {
+    from { background: transparent; color: black; border-color: black; }
+    to { background: white; color: #800000; border-color: #800000; }
+}
+
+
+
+
+
 
 
 
@@ -343,59 +475,23 @@ section {
 
 
 
-/*CAROUSEL STYLES*/
-
-.carousel-item {
-        
-    z-index: 0;
-    
-    display: block;
-    
-    overflow: hidden;
-    
-}
-
-#home .carousel-item {    
-    width: 100%;
-    height: 700px;
-    
-}
+/*PILLARS STYLES*/
 
 
-.main-carousel-slide {
-    vertical-align: top;
-    
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 50%;
-    
-    overflow: hidden;
-    
+
+.pillars-carousel {
     background-color: transparent;
     box-shadow: 0px 0px 5px 3px #AAAAAA;
-    
-    align-content: center;
-}
-
-.pillars-carousel-slide {
-    width: 100%;
-    height: 0;
-    
-    margin: 0;
-    padding-bottom: 50%;
 }
 
 #pillars .carousel-inner {
+    position: relative;
+    
     width: 100%;
-    height: 220px;
+    height: 0;
     
     margin: 0;
-    padding: 0;
-    
-    background: #000000;
-    /*align-items: center;
-    justify-content: center;*/
+    padding-bottom: 60%;
     
     overflow: hidden;
 }
@@ -408,6 +504,11 @@ section {
 }
 
 
+
+
+
+/*CAROUSEL STYLES*/
+
 #pillars img {
     margin: 0;
     padding: 0;
@@ -417,9 +518,7 @@ section {
     /*animation: marqueeX 5s linear infinite alternate;*/
 }
 
-
-
-.home-carousel img {
+#home img {
     z-index: -1;
     animation: marqueeY 10s linear infinite alternate;
 }
@@ -445,12 +544,11 @@ section {
     100% { transform: translateY(-10%); }
 }
 
-
-
 .carousel-item {
   position: relative;
   display: none;
   float: left;
+  overflow: hidden;
     
   width: 100%;
     
@@ -463,7 +561,6 @@ section {
 }
 
 
-
-
-
-
+.carousel-indicators {
+    z-index: 9;
+}
