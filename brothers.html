@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PGN Brothers</title>
+        
+        
+        <link rel="stylesheet" href="styles.css">
+        <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+        <template class="bro-list-data" id="bro-list-eboard-names">Jordan Tran;Mansi Vohra;Kayla Bilotti;Jacob Paton;Joey Self;Bryn Bennett</template>
+        <template class="bro-list-data" id="bro-list-eboard-titles">President;External Vice President;Internal Vice President;VP Finance;VP Membership;VP Communications</template>
+        <template class="bro-list-data" id="bro-list-eboard-years">21;22;22;22;21;22</template>
+        <template class="bro-list-data" id="bro-list-eboard-texts">Jordan is a junior studying business. Originally from Ann Arbor, he enjoys watching movies and playing basketball. This past May, he was able to go on a short term study abroad trip to China. He will be interning as a Strategic Finance Intern at PepsiCo. this coming summer in their Chicago office. He is extremely excited and proud to be able to serve as president of Phi Gamma Nu for the 2020 year.;Mansi is a sophomore studying Business with intended minors in entrepreneurship and creative writing. She is from Long Island, NY, and enjoys kayaking, playing tennis, and exploring new restaurants and coffee shops. Currently, she is looking to intern in Chicago, within a role that combines her interests in finance and consulting.;Kayla is a sophomore from Westport, Connecticut, majoring in Economics. Her career interests include managerial and risk management consulting. In her free time, she has a passion for philanthropic efforts and musical theatre. Last summer, she interned in the actuarial department of a reinsurance company. She will be interning in Quicken Loan's Capital Markets Department with a focus in Risk Mitigation this coming summer.;Jacob is a sophomore studying Business with a double minor in Political Science and Law, Justice, and Social Change. Hailing from Plymouth, MI, Jacob spends his free time keeping up with international politics and rooting for Michigan sports. Last summer, Jacob interned at a startup in Ann Arbor as a marketing and strategy intern. His career interests lie somewhere between finance, strategy, and law.;Joey is a junior studying Mechanical Engineering and Business. He is from Nashotah, WI and enjoys water sports, hiking, traveling, and robotics. Last summer, he worked on medical devices as a Mechanical Engineering Intern at DEKA Research and Development in Manchester, NH. In the future, he hopes to pursue a career in product development and eventually start his own medical device company.;Bryn is a sophomore studying Communications and Spanish. She grew up in Randolph, NJ, but her family currently lives in Charlotte, NC. This summer, Bryn will intern at Franworth for graphic design and creative strategy. She is passionate about the performing arts and loves to paint! Bryn hopes to continue working with communications in the future and is looking forward to a potential career in Public Relations.</template>
+        <template class="bro-list-data" id="bro-list-eboard-linkedins">jordan-tran-023190145/;mansi-vohra-867bb5173/;kayla-bilotti-8b419a173/;jacob-paton-735008125/;josephmself/;brynbenn/</template>
+        <template class="bro-list-data" id="bro-list-eboard-emails">jttran;mvohra;kbilotti;jpaton;jmself;brynbenn</template>
+        
+        
+        <template class="bro-list-data" id="bro-list-names">Alvin Yao;Andy Chen;Habib Bello;Hogan Mastanduno;Isabella Young;Jessy Wu;Julia Bilotti;Lily Friedman;Matteo Ciabattoni;Max Kober;Namitha Kumar;Paul Lellouche;Nathan Lee;Sahas Dendukuri;Sneha Ojha;Tracy Chen?Amith Dayananda;Brooke Dukellis;Dabao Zhang;Isabella Conti;Jarryn Shin;Kalman Heims;Kevin Yahampath;Laila Odeh;Lauren Hanoosh;Natalia Torres;Maille Frohoff;Mara Sabin;Maya Malouin;Olivia Schafer;Prathik Mellacheruvu;Prisha Grover;Rahul Shah;Rithika Vedamuthu;Thomas Hill;Vishwa Nathan?Anabela Dokic;Anastasia Bergeron;Andrew Kertawidjaja;Anthony Charameda;Bryn Bennett;Dhruva Gurushankar;Erika Dalton;Jordan Tran;Kai Zhao;Kevin Daly;Lillian Yang;Mairna Askar;Mansi Vohra;Noah Copeland;Ruth Carcillo;Samuel Kates;Samuel Sugerman;Sarah Madden;Will Harrison?Alexander Foss;Anna Zidarescu;Ari Bosse;Grace Vanden-Bossche;Jacob Paton;Jessica Vinagolu-Baur;Justin Lee;Katie Xu;Kayla Bilotti;Kevin Zhao;Matthew Delorenzo;Olivia Hesse;Raushan Melton;Rian Ratnavale;Romir Sheth;Sanjit Johri;Sydney Lum;Tal Kamin?Anna Wysong;Caitlin Murphy;Ellice Falivene;Joey Self;Jon Rotbard;Kelvin Chang;Lucas Williams;Matthew Golub;Naman Gupta;Sara James?Cameron Zurawlow;Connor Bailo;Garrett Wilson;Jay Bhanushali;Mia McCrumb;Muskaan Bajoria;Peter Georginis;Sydney Vollmar;Timothy Sweeny</template>
+        
+        <template class="bro-list-data" id="bro-list-majors">Business;Economics;Business;Computer Science;History;Economics;Psychology;Program in the Environment;Electrical Engineering;Business;Business;Aerospace Engineering;Business;Computer Science;Mechanical Engineering;Economics?Business;Business;Economics;Business;Business;Business;Business;Public Health;Economics;Industrial Engineering;Business;Business;Business;Business;Industrial Engineering;Business;Data Science;Industrial Engineering;Business;Computer Science?Business;English;Business / Psychology;Business;Communications / Spanish;Economics;Violin Performance;Business;Economics;Economics;Business;Computer Sci. / Int. Relations;Business;Business;Business;Business;Program in the Environment;Business;Business?Computer Science;Business / Sociology;Business;Business;Business;Psychology;Business;Businesss / Information;Economics;Computer Science;Business;Psychology;Information;Cognitive Sci. / Psychology;Business;Business;Economics;Dance / Economics?Business;Business;Economics;Mechanical Eng. / Business;Business;Business / Information;Mechanical Engineering;Economics / Spanish;Business;Business / Information?Business;Business;Business;Business;Business;Business;Business;Information;Economics</template>
+        
+        <template class="bro-list-data" id="bro-list-years">23;22;22;23;22;23;22;22;22;23;23;22;23;22;23;22?22;22;23;23;23;23;22;22;22;22;23;23;22;23;22;23;23;22;22;22?22;21;22;21;22;22;22;21;21;21;21;22;22;22;21;21;22;22;22?22;21;22;21;22;21;21;21;22;21;21;21;21;21;21;22;22;22?21;21;21;21;21;22;21;21;21;21?21;21;21;21;21;21;21;21;21</template>
+        
+        <template class="bro-list-data" id="bro-list-linkedins">alvinyao2001/;andy-chen-211835173/;habib-bello-0409a1171/;hogan-mastanduno-8658511a2/;isabella-young342/;jessy-wu-915a3a195/;jbilotti45/;lily-grace-friedman/;matteo-ciabattoni/;max-kober/;namitha-kumar-688585197/;paullellouche/;nathan-lee-b9716014b/;sahasd/;snehaojha/;tracychn/?amith-dayananda-6a680717b/;brooke-dukellis/;dabao-zhang-6a1b2b196/;isabellagconti/;jarrynshin/;kalman-heims-30547a194/;kevinyahampath/;laila-odeh-935b21196/;lauren-hanoosh-921155175/;nctorres/;maille-frohoff-77562918b/;mara-sabin-91a295193/;maya-malouin/;olivia-schafer-215296193/;prathik-mellacheruvu/;prisha-grover/;rahulshah0823/;rithveda/;thomas-hill-w/;vishwa-nathan/?anabela-dokic-4994a8179/;anastasia-bergeron/;a-kertawidjaja/;anthony-charameda-1b0653170/;brynbenn/;dhruva-gurushankar-5443a0164/;erikajdalton/;jordan-tran-023190145/;kkaizhao/;kpdaly/;yang-lillian/;mairnaaskar/;mansi-vohra-867bb5173/;noah-copeland-350b66173/;ruth-carcillo-8271a6157/;samkates/;samuel-sugerman/;sarah-madden-08b08b17b/;will-harrison-222390142/?alexfoss/;anna-zidarescu-72218514b/;ari-bosse-3b0a94169/;grace-vanden-bossche-b7aa16171/;jacob-paton-735008125/;jessica-vinagolu-baur/;justin-lee-/;katie-xu-449013158/;kayla-bilotti/;kevinkzhao/;matthew-delorenzo-311054173/;olivia-hesse-381313164/;raushanmelton/;rian-ratnavale/;romirsheth/;sanjitj/;sydney-lum-6697bb171/;talkamin/?anna-wysong/;caitlin-murphy-030026154/;ellice-falivene-70593215a/;josephmself/;jon-rotbard-a15bbb44/;kelvinct/;lucas-williams-47a4b4160/;matthewgolub/;namangupta0/;sara-james-39541115b/?cameron-zurawlow-5ab617150/;connorpaulbailo/;garrett-wilson-187405148/;jbhanu/;mia-mccrumb-0452a1151/;muskaan-bajoria-676328150/;peter-georginis/;sydney-vollmar/;timothy-sweeny-387aa6150/</template>
+        
+        
+        <!-- TEMPLATES -->
+        
+        <template id="eboard-card-template">
+            <div class="eboard-card">
+                <img/>
+                
+                <div class="eboard-card-textbox">
+                    <h4></h4>
+                    <h5></h5>
+                    <p2></p2>
+                </div>
+                
+                <hr>
+                <div class="eboard-card-footer">
+                    <a class="fa fa-linkedin"/>
+                    <a class="fa fa-envelope-o"/>
+                </div>
+            </div>
+        </template>
+        
+        <template class="brother-card-template">
+            <div class="brother-card">
+                <img/>
+                
+                <div class="brother-card-textbox">
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+                
+                <hr>
+                <div class="brother-card-footer">
+                    <a class="fa fa-linkedin"/>
+                </div>
+            </div>
+        </template>
+        
+        
+    </head>
+
+    <body onload="page_load_cb();">
+        
+        <div id="loader">
+        </div>
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.4.1.js"></script>
+        
+        <script>
+            
+            //document.body.style="background: white url('pgn-logo.png') no-repeat center fixed; background-size: 80px;"
+            
+            function page_load_cb() {
+                page_load();
+                //setTimeout(page_load, 3000);
+            }
+            
+            function page_load() {
+                //document.body.style = "background: white;";
+                
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("navbar").style.display = "block";
+                document.getElementById("sections").style.display = "flex";
+            }
+        </script>
+        
+        <div id="navbar" class="animate-bottom">
+            <img src="pgn-logo.png" width="75" height="50" alt=""/>
+            <a class="active" href="https://docs.google.com/forms/d/e/1FAIpQLScFLGsHN7rVfy45NF_ZqK8nrhaikODQMqvnijG3WzQ9yVq7Tw/closedform">APPLY NOW</a>
+            <a class="active" href="recruitment.html">RECRUITMENT</a>
+            <a class="active" href="#top">BROTHERS</a>
+            <a class="active" href="index.html#about-us">ABOUT US</a>
+            <a class="active" href="index.html">HOME</a>
+        </div>
+            
+        <div id="sections" class="animate-bottom" style="background: transparent">
+            
+            <div id="top" class="buffer-small"></div>
+            
+            
+            <div id="home" class="home-section">
+                
+                <div id="home-header">
+                    <h1>
+                        <span class="first-letter">P</span>HI
+                        <span class="first-letter">G</span>AMMA
+                        <span class="first-letter">N</span>U
+                    </h1>
+
+                    <h2>
+                        Professional Development Organization
+                    </h2>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScFLGsHN7rVfy45NF_ZqK8nrhaikODQMqvnijG3WzQ9yVq7Tw/closedform">
+                        APPLY NOW
+                    </a>
+                </div>
+                
+                <div id="home-carousel" class="carousel slide home-carousel carousel-fade" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item home-carousel active">
+                            <img z-index="0" width="100%" height="auto" src="pgn-main-slides/pgn-main-slides-1.jpg" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item home-carousel">
+                            <img width="100%" height="auto" src="pgn-main-slides/pgn-main-slides-2.jpg" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item home-carousel">
+                            <img width="100%" height="auto" src="pgn-main-slides/pgn-main-slides-3.jpg" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <section id="president">
+                <div class="section-box">
+                    
+                    <div class="section-title indented">
+                        <h2>
+                            A LETTER FROM OUR PRESIDENT
+                        </h2>
+                    </div>
+                    
+                    <table>
+                        <tr>
+                            <td text-align="left">
+                                <div class="indented">
+                                    <div class="img-card">
+                                        <img src="pgn-bro-list-data/pgn-bro-list-jordan-tran.jpg" alt="Slide 2">
+                                    </div>
+                                    <h3 class="v-indented">
+                                        Jordan Tran '21
+                                    </h3>
+                                </div>
+                            </td>
+                            <td text-align="left">
+                                <div class="indented">
+                                    <p>
+                                        Welcome to the PGN Delta Phi Chapter at the University of Michigan!
+                                    </p>
+                                    <p>
+                                        Phi Gamma Nu is one of the largest co-ed business development organizations in the United States, encompassing a rich history dating back to its founding in 1924 at Northwestern University. We pride ourself on three pillars: professional, social, and philanthropy. As a member of Phi Gamma Nu, you have access to a network of dynamic leaders, both on and off campus. Recent exclusive networking events include Deloitte, McKinsey, LinkedIn, Google, and Qualtrics.
+                                    </p>
+                                    <p>
+                                        With 100 members, we are a family that celebrates the individual. In addition to our professional offerings, we host social events and volunteer with numerous local organizations in order to build lasting friendships while giving back to our community.
+                                    </p>
+                                    <p>
+                                        Our motto, "Business through mindset, not just major," showcases our commitment to diversity. We encourage all majors to apply to further explore your business interest.
+                                    </p>
+                                    <p>
+                                        I hope you will continue browsing our website to learn more about who we are, what we stand for, and where you can fit in. If you have any questions, please contact me at jttran@umich.edu. We look forward to meeting you!
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    
+                </div>
+            </section>
+            
+            <div class="buffer-medium"></div>
+            <section id="eboard">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Executive Board
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-medium"></div>
+            <section id="mu">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Mu Class
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-medium"></div>
+            <section id="lambda">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Lambda Class
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-medium"></div>
+            <section id="kappa">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Kappa Class
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-medium"></div>
+            <section id="iota">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Iota Class
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-medium"></div>
+            <section id="theta">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Theta Class
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-medium"></div>
+            <section id="eta">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Eta Class
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container"></div>
+                </div>
+            </section>
+            
+            <!--section id="alumni">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>
+                            Alumni
+                        </h2>
+                    </div>
+                    
+                    <div class="pc-container">
+                    </div>
+                </div>
+            </section-->
+            
+            
+            <div class="buffer-large"></div>
+                
+            <div id="footer">
+                
+                <div class="v-indented">
+                    
+                    <h2>Follow Us</h2>
+                    
+                    <div>
+                        <a class="fa fa-envelope-o" href="pgneboard2018@umich.edu"></a>
+                        <a class="fa fa-facebook" href="https://www.facebook.com/PGNMichigan/"></a>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/groups/7048951/profile/"></a>
+                        <a class="fa fa-instagram" href="https://instagram.com/pgnuofm?igshid=1fr8cdc093qne"></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <script src="brothers.js"></script>
+            
+            
+    </div>
+        
+        
+        
+
+        
+    </body>
+</html>

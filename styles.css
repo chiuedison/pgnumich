@@ -564,3 +564,129 @@ section {
 .carousel-indicators {
     z-index: 9;
 }
+
+
+
+
+/*BROTHERS PAGE STYLES*/
+
+/*EBOARD CARD STYLES*/
+
+.pc-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    text-align: center;
+        
+    width: 100%;
+}
+
+.eboard-card {
+    box-shadow: 0px 0px 5px 3px #AAAAAA;
+    border-radius: 2px;
+    
+    width: 300px;
+    height: 550px;
+    
+    margin: 20px;
+}
+
+.eboard-card img {
+    box-shadow: 0px 0px 2px 1px #AAAAAA;
+    border-radius: 2px;
+    
+    width: 200px;
+    height: 200px;
+    
+    margin: 50px 50px 0px 50px;
+    
+    object-fit: cover;
+}
+
+.eboard-card h4,h5 {
+    text-align: center;
+    
+    margin: 10px;
+}
+
+.eboard-card h5 {
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.eboard-card a {
+    margin: 5px;
+}
+
+.eboard-card-textbox {
+    width: 260px;
+    height: 200px;
+    
+    font-size: 12px;
+    
+    text-align: left;
+
+    line-height: 120%;
+    margin: 5px 20px 20px 20px;
+}
+
+.eboard-card-footer {
+    text-align: center;
+    align-content: center;
+}
+
+
+/*BROTHER CARD STYLES*/
+
+.brother-card {
+    box-shadow: 0px 0px 5px 3px #AAAAAA;
+    border-radius: 2px;
+    
+    width: 200px;
+    height: 300px;
+    
+    margin: 20px;
+}
+
+.brother-card img {
+    box-shadow: 0px 0px 2px 1px #AAAAAA;
+    border-radius: 2px;
+    
+    width: 150px;
+    height: 150px;
+    
+    margin: 25px 25px 0px 25px;
+    
+    object-fit: cover;
+}
+
+.brother-card h4 {
+    font-size: 12px;
+    
+    text-align: center;
+    
+    margin: 7px;
+}
+
+.brother-card h5 {
+    color: #AAAAAA;
+    
+    font-size: 10px;
+    
+    text-align: center;
+    
+    margin: 7px;
+}
+
+.brother-card hr {
+    width: 87%;
+}
+
+.brother-card-footer {
+    text-align: center;
+    align-content: center;
+    
+    vertical-align: center;
+}
+

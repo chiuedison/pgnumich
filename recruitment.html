@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PGN Brothers</title>
+        
+        
+        <link rel="stylesheet" href="styles.css">
+        <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+    <body onload="page_load_cb();">
+        
+        <div id="loader">
+        </div>
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap-4.4.1.js"></script>
+        
+        <script>
+            
+            //document.body.style="background: white url('pgn-logo.png') no-repeat center fixed; background-size: 80px;"
+            
+            function page_load_cb() {
+                page_load();
+                //setTimeout(page_load, 3000);
+            }
+            
+            function page_load() {
+                //document.body.style = "background: white;";
+                
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("navbar").style.display = "block";
+                document.getElementById("sections").style.display = "flex";
+                
+                document.getElementById("about-us").style.display = "none";
+                document.getElementById("pillars").style.display = "none";
+                //document.getElementById("president").style.display = "none";
+            }
+        </script>
+        
+        <div id="navbar" class="animate-bottom">
+            <img src="pgn-logo.png" width="75" height="50" alt=""/>
+            <a class="active" href="https://docs.google.com/forms/d/e/1FAIpQLScFLGsHN7rVfy45NF_ZqK8nrhaikODQMqvnijG3WzQ9yVq7Tw/closedform">APPLY NOW</a>
+            <a class="active" href="#top">RECRUITMENT</a>
+            <a class="active" href="brothers.html">BROTHERS</a>
+            <a class="active" href="index.html#about-us">ABOUT US</a>
+            <a class="active" href="index.html">HOME</a>
+        </div>
+            
+        <div id="sections" class="animate-bottom" style="background: transparent">
+            
+            <div id="top" class="buffer-small"></div>
+            
+            
+            <div id="home" class="home-section">
+                
+                <div id="home-header">
+                    <h1>
+                        <span class="first-letter">P</span>HI
+                        <span class="first-letter">G</span>AMMA
+                        <span class="first-letter">N</span>U
+                    </h1>
+
+                    <h2>
+                        Professional Development Organization
+                    </h2>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScFLGsHN7rVfy45NF_ZqK8nrhaikODQMqvnijG3WzQ9yVq7Tw/closedform">
+                        APPLY NOW
+                    </a>
+                </div>
+                
+                <div id="home-carousel" class="carousel slide home-carousel carousel-fade" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item home-carousel active">
+                            <img z-index="0" width="100%" height="auto" src="pgn-main-slides/pgn-main-slides-1.jpg" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item home-carousel">
+                            <img width="100%" height="auto" src="pgn-main-slides/pgn-main-slides-2.jpg" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item home-carousel">
+                            <img width="100%" height="auto" src="pgn-main-slides/pgn-main-slides-3.jpg" alt="Slide 3">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            <section id="schedule">
+                <div class="section-box">
+                    <div class="section-title indented">
+                        <h2>FALL 2020 RECRUITMENT</h2>
+                    </div>
+                    <div class="h-indented">
+                        <p style="text-align: center; font-style: italic;">
+                            Stay tuned for future updates on our Fall 2020 Recruitment schedule.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <div class="buffer-large"></div>
+                
+            <div id="footer">
+                
+                <div class="v-indented">
+                    
+                    <h2>Follow Us</h2>
+                    
+                    <div>
+                        <a class="fa fa-envelope-o" href="pgneboard2018@umich.edu"></a>
+                        <a class="fa fa-facebook" href="https://www.facebook.com/PGNMichigan/"></a>
+                        <a class="fa fa-linkedin" href="https://www.linkedin.com/groups/7048951/profile/"></a>
+                        <a class="fa fa-instagram" href="https://instagram.com/pgnuofm?igshid=1fr8cdc093qne"></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <script src="brothers.js"></script>
+            
+            
+    </div>
+        
+        
+        
+
+        
+    </body>
+</html>
