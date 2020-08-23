@@ -9,9 +9,10 @@
         
         
         <link rel="stylesheet" href="styles.css">
-        <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-4.4.1.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+            
     </head>
 
     <body onload="page_load_cb();">
@@ -22,8 +23,17 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
         <script>
+
+            AOS.init({
+               easing: "ease-in-out-quad",
+               duration: 500,
+               once: false,
+               disable: "mobile"
+            });
+            
             
             //document.body.style="background: white url('pgn-logo.png') no-repeat center fixed; background-size: 80px;"
             
@@ -39,9 +49,7 @@
                 document.getElementById("navbar").style.display = "block";
                 document.getElementById("sections").style.display = "flex";
                 
-                document.getElementById("about-us").style.display = "none";
-                document.getElementById("pillars").style.display = "none";
-                //document.getElementById("president").style.display = "none";
+                AOS.refresh();
             }
         </script>
         
@@ -115,7 +123,7 @@
             
             
             <section id="schedule">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>FALL 2020 RECRUITMENT</h2>
                     </div>

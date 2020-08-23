@@ -9,8 +9,9 @@
         
         
         <link rel="stylesheet" href="styles.css">
-        <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-4.4.1.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
             
         <template class="bro-list-data" id="bro-list-eboard-names">Jordan Tran;Mansi Vohra;Kayla Bilotti;Jacob Paton;Joey Self;Bryn Bennett</template>
         <template class="bro-list-data" id="bro-list-eboard-titles">President;External Vice President;Internal Vice President;VP Finance;VP Membership;VP Communications</template>
@@ -92,8 +93,17 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
         <script>
+            
+            AOS.init({
+               easing: "ease-in-out-quad",
+               duration: 500,
+               once: false,
+               disable: "mobile"
+            });
+            
             
             //document.body.style="background: white url('pgn-logo.png') no-repeat center fixed; background-size: 80px;"
             
@@ -108,6 +118,8 @@
                 document.getElementById("loader").style.display = "none";
                 document.getElementById("navbar").style.display = "block";
                 document.getElementById("sections").style.display = "flex";
+                
+                AOS.refresh();
             }
         </script>
         
@@ -179,7 +191,7 @@
             
             
             <section id="president">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     
                     <div class="section-title indented">
                         <h2>
@@ -227,7 +239,7 @@
             
             <div class="buffer-medium"></div>
             <section id="eboard">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Executive Board
@@ -241,7 +253,7 @@
             
             <div class="buffer-medium"></div>
             <section id="mu">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Mu Class
@@ -255,7 +267,7 @@
             
             <div class="buffer-medium"></div>
             <section id="lambda">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Lambda Class
@@ -269,7 +281,7 @@
             
             <div class="buffer-medium"></div>
             <section id="kappa">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Kappa Class
@@ -283,7 +295,7 @@
             
             <div class="buffer-medium"></div>
             <section id="iota">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Iota Class
@@ -297,7 +309,7 @@
             
             <div class="buffer-medium"></div>
             <section id="theta">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Theta Class
@@ -311,7 +323,7 @@
             
             <div class="buffer-medium"></div>
             <section id="eta">
-                <div class="section-box">
+                <div class="section-box" data-aos="fade-up">
                     <div class="section-title indented">
                         <h2>
                             Eta Class
@@ -357,11 +369,7 @@
             <script src="brothers.js"></script>
             
             
-    </div>
-        
-        
-        
-
-        
+        </div>
+                
     </body>
 </html>
