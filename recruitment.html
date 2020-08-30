@@ -5,14 +5,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PGN Brothers</title>
+        <title>PGN Recruitment</title>
         
         
         <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="css/bootstrap-4.4.1.css" type="text/css">
+        <link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-            
+        
     </head>
 
     <body onload="page_load_cb();">
@@ -23,17 +22,8 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         
         <script>
-
-            AOS.init({
-               easing: "ease-in-out-quad",
-               duration: 500,
-               once: false,
-               disable: "mobile"
-            });
-            
             
             //document.body.style="background: white url('pgn-logo.png') no-repeat center fixed; background-size: 80px;"
             
@@ -49,13 +39,15 @@
                 document.getElementById("navbar").style.display = "block";
                 document.getElementById("sections").style.display = "flex";
                 
-                AOS.refresh();
+                document.getElementById("about-us").style.display = "none";
+                document.getElementById("pillars").style.display = "none";
+                //document.getElementById("president").style.display = "none";
             }
         </script>
         
         <div id="navbar" class="animate-bottom">
             <img src="pgn-logo.png" width="75" height="50" alt=""/>
-            <a class="active" href="https://docs.google.com/forms/d/e/1FAIpQLScFLGsHN7rVfy45NF_ZqK8nrhaikODQMqvnijG3WzQ9yVq7Tw/closedform">APPLY NOW</a>
+            <a class="active" href="https://docs.google.com/forms/d/1y3AWX_KVDr_UFAOa0wcQ-wrLOw1_KOWPY7JWF-UT1iI/edit?usp=drive_web">APPLY NOW</a>
             <a class="active" href="#top">RECRUITMENT</a>
             <a class="active" href="brothers.html">BROTHERS</a>
             <a class="active" href="index.html#about-us">ABOUT US</a>
@@ -81,7 +73,7 @@
                             Professional Development Organization
                         </h2>
 
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScFLGsHN7rVfy45NF_ZqK8nrhaikODQMqvnijG3WzQ9yVq7Tw/closedform">
+                        <a href="https://docs.google.com/forms/d/1y3AWX_KVDr_UFAOa0wcQ-wrLOw1_KOWPY7JWF-UT1iI/edit?usp=drive_web">
                             APPLY NOW
                         </a>
                     </div>
@@ -121,17 +113,98 @@
                 
             </div>
             
-            
-            <section id="schedule">
-                <div class="section-box" data-aos="fade-up">
+            <section id="rush-video">
+                <div class="section-box">
+                    
                     <div class="section-title indented">
                         <h2>FALL 2020 RECRUITMENT</h2>
                     </div>
-                    <div class="h-indented">
-                        <p style="text-align: center; font-style: italic;">
-                            Stay tuned for future updates on our Fall 2020 Recruitment schedule.
-                        </p>
+                    
+                    <iframe style="margin: 0 auto" width="800" height="450" src="https://www.youtube.com/embed/vEfTiPKYbKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </div>
+            </section>
+            
+            
+            <section id="schedule">
+                <div class="section-box">
+                    
+                    <div class="section-title indented">
+                        <h2>RECRUITMENT SCHEDULE</h2>
                     </div>
+                    
+                                        
+                    <div class="indented schedule-event">
+                        <img src="schedule-data/meet-the-brothers.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Meet the Brothers </h3>
+                            <h4> Monday, September 6th | 3-4pm EST | <a href="https://umich.zoom.us/j/91492843998">On Zoom</a></h4>
+                            <p> Attendance highly recommended </p>
+                            <p2> Meet the brothers of Phi Gamma Nu through this informal networking session! </p2>
+
+                        </div>
+                    </div>
+                    
+                    <div class="indented schedule-event">
+                        <!--img src="pgn-prof-slides/pgn-prof-slides-3.jpg" alt=""/-->
+                        <img src="schedule-data/speed-dating.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Speed Dating </h3>
+                            <h4> Session 1: Friday, September 11th | 6-8pm EST | <a href="https://umich.zoom.us/j/92099173072">On Zoom</a></h4>
+                            <h4> Session 2: Saturday, September 12th | 3-5pm EST | <a href="https://umich.zoom.us/j/98123839499">On Zoom</a></h4>
+                            <p> Attendance required (Pick only <span style="font-weight: 600">one</span> session) </p>
+                            <p2> Get to know the brothers better through formal networking and interactive speed dating! </p2>
+
+                        </div>
+                    </div>
+                    
+                    <div class="indented schedule-event">
+                        <img src="schedule-data/office-hours.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Application Office Hours </h3>
+                            <h4> Sunday, September 13th | 6-8pm EST | <a href="https://umich.zoom.us/j/94628603232">On Zoom</a></h4>
+                            <p> Attendance optional </p>
+                            <p2> Get help with your application due  on Sunday, September 13th at 11:59pm! </p2>
+                        </div>
+                    </div>
+                                        
+                    <div class="indented schedule-event">
+                        <img src="schedule-data/app-due.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Application Due </h3>
+                            <h4> Sunday, September 13th | 11:59pm EST | <a href="https://docs.google.com/forms/d/1y3AWX_KVDr_UFAOa0wcQ-wrLOw1_KOWPY7JWF-UT1iI/edit?usp=drive_web">Apply Here</a>
+                            </h4>
+                            <p> Required </p>
+                        </div>
+                    </div>
+                    
+                    <div class="indented schedule-event">
+                        <img src="schedule-data/team-building.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Team Building </h3>
+                            <h4> Wednesday, September 16th - Thursday, September 17th </h4>
+                            <p> Invite Only </p>
+                        </div>
+                    </div>
+
+                    <div class="indented schedule-event">
+                        <img src="schedule-data/coffee-chats.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Coffee Chats </h3>
+                            <h4> Monday, September 21 - Wednesday, September 23 </h4>
+                            <p> Invite Only </p>
+                        </div>
+                    </div>
+
+                    <div class="indented schedule-event">
+                        <img src="schedule-data/final-interview.jpg" alt=""/>
+                        <div class="schedule-desc">
+                            <h3> Final Interview </h3>
+                            <h4> Thursday, September 24 - Friday, September 25 </h4>
+                            <p> Invite Only </p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             

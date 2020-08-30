@@ -270,6 +270,51 @@ section {
 }
 
 
+#schedule h3 {
+    font-weight: 200;
+}
+
+#schedule h4 {
+    color: #800000;
+    font-size: 17px;
+}
+
+#schedule p {
+    color: #888888;
+}
+
+#schedule p2 {
+    font-style: italic;
+    
+    font-size: 12px;
+}
+
+.schedule-event {
+    /*margin: 30px 20%;*/
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 700px;
+    
+    display: flex;
+    
+}
+
+.schedule-event img {
+    margin-right: 20px;
+    
+    height: 150px;
+    width: 150px;
+    
+    overflow: hidden;
+    
+    object-fit: cover;
+    
+    border-radius: 200px;
+}
+
+.schedule-desc {
+    width: 500px;
+}
 
 /*TABLE STYLES*/
 
