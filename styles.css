@@ -312,6 +312,16 @@ section {
     border-radius: 200px;
 }
 
+.email-list a {
+    font-style: italic;
+        
+    text-align: center;
+    
+    width: 100%;
+}
+
+
+
 .schedule-desc {
     width: 500px;
 }
