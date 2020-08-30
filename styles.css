@@ -312,12 +312,8 @@ section {
     border-radius: 200px;
 }
 
-.email-list a {
-    font-style: italic;
-        
-    text-align: center;
-    
-    width: 100%;
+iframe {
+    margin: 0 auto;
 }
 
 
