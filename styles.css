@@ -312,8 +312,13 @@ section {
     border-radius: 200px;
 }
 
-iframe {
-    margin: 0 auto;
+.email-list a {
+    font-style: italic;
+        
+    margin: auto;
+    text-align: center;
+    
+    width: 100%;
 }
 
 
