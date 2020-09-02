@@ -115,17 +115,17 @@ h2 {
 }
 
 #home-header a:hover {
-    -webkit-animation: fade-in 0.3s forwards 1;
-    animation: fade-in 0.3s forwards 1;
+    -webkit-animation: home-header-a-fade-in 0.3s forwards 1;
+    animation: home-header-a-fade-in 0.3s forwards 1;
     
 }
 
-@-webkit-keyframes fade-in {
+@-webkit-keyframes home-header-a-fade-in {
     from { background: transparent; color: white; }
     to { background: white; color: #800000; }
 }
 
-@keyframes fade-in {
+@keyframes home-header-a-fade-in {
     from { background: transparent; color: white; }
     to { background: white; color: #800000; }
 }
@@ -313,13 +313,55 @@ section {
 }
 
 .email-list a {
-    font-style: italic;
+    
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    
+    /*
+    color: white;
+    font: normal normal 500 25px Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    text-decoration: none;
+    */
         
-    margin: auto;
+    background-color: #800000;
+    
+    border-radius: 35px;
+    
     text-align: center;
     
-    width: 100%;
+    width: 400px;
+    padding: 16px 30px;
+    margin: auto auto;
+
 }
+
+.email-list {
+    
+    margin: 30px auto;
+    width: 700px;
+    
+    
+    display: flex;
+}
+
+.email-list a:hover {
+    -webkit-animation: email-list-a-fade-in 0.3s forwards 1;
+    animation: email-list-a-fade-in 0.3s forwards 1;
+    
+}
+
+@-webkit-keyframes email-list-a-fade-in {
+    from { background: #800000; color: white; text-decoration: none; }
+    to { background: #FFCB05; color: white; text-decoration: none; }
+}
+
+@keyframes email-list-a-fade-in {
+    from { background: #800000; color: white; text-decoration: none; }
+    to { background: #FFCB05; color: white; text-decoration: none; }
+}
+
+
 
 
 
@@ -453,16 +495,6 @@ section {
     
     -webkit-animation: fa-fade-in 0.2s forwards 1;
     animation: fa-fade-in 0.2s forwards 1;
-}
-
-
-
-
-
-
-
-#home-header a:hover {
-    
 }
 
 @-webkit-keyframes fa-fade-in {
