@@ -91,12 +91,25 @@ h2 {
 
 
 #home-header h1 {
-    
-    font: normal normal 600 Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
+}
+
+@media screen and (min-width: 900px) {
+  div#home-header h1 {
+    font: normal normal 100 650% Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-weight: 100;
     padding: 0px 0px;
 	margin: auto;
-	font-size: 650%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  div#home-header h1 {
+    font: normal normal 100 350% Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 100;
+    padding: 0px 0px;
+	margin: auto;
+  }
 }
 
 #home-header h1:after {
@@ -105,13 +118,28 @@ h2 {
     margin: 0 auto; /* This will center the border. */
     width: 50%; /* Change this to whatever width you want. */
     padding-top: 0px; /* This creates some space between the element and the border. */
+	padding-bottom: 0px;
     border-bottom: 1px solid white; /* This creates the border. Replace black with whatever color you want. */
 }
 
 #home-header h2 {
-    font: normal normal 500 2em Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    padding: 25px 0px 100px 0px;
+
+}
+
+@media screen and (min-width: 900px) {
+  div#home-header h2 {
+    font: normal normal 500 175% Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    padding: 20px 0px 100px 0px;
 	margin: auto;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  div#home-header h2 {
+    font: normal normal 500 100% Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    padding: 20px 0px 100px 0px;
+	margin: auto;
+  }
 }
 
 #home-header a {
