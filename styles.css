@@ -92,11 +92,11 @@ h2 {
 
 #home-header h1 {
     
-    font: normal normal 600 6vw Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font: normal normal 600 500% Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-weight: 100;
     padding: 0px 0px;
 	border-bottom: solid thin white;
-	margin: 0px 350px 0px 350px;
+	margin: 0px 400px 0px 400px;
 	text-align: center;
 
 }
