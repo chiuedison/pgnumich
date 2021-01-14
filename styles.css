@@ -325,7 +325,7 @@ section {
 }
 
 .event-divider {
-	width: 800px;
+	width: 65%;
 	margin: 0px auto;
 	background-color: #FFCB05;
 
@@ -358,6 +358,7 @@ section {
 	margin-bottom: 5px;
 	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-weight: 600;
+	font-size: 15px;
 }
 
 #schedule p2 {
