@@ -509,24 +509,25 @@ section {
 #navbar img {
     float: left;
     object-fit: contain;
+	padding-top: 0px;
 }
 
-#navbar a {
+.navbar-right {
     color: black;
     font-size: 16px;
     font-weight: 200;
     text-decoration: none;
-
+	
     text-align: center;
     float: right;
-    padding: 20px;
+    padding: 19px 20px 20px;
 }
 
-#navbar a:hover {
+.navbar-right:hover {
     color: #FFCB05;
 }
 
-#navbar a:active {
+.navbar-right:active {
     color: #FFCB05;
 }
 
