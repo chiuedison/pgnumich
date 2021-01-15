@@ -73,6 +73,7 @@ function eboard_card (name, title, text, year, linkedin, email) {
     var a1 = document.createElement("a");
     a1.setAttribute("class", "fa fa-linkedin");
     a1.setAttribute("href", "https://www.linkedin.com/in/" + linkedin);
+	a1.setAttribute("target", "_blank");
     
     var a2 = document.createElement("a");
     a2.setAttribute("class", "fa fa-envelope-o");
@@ -117,6 +118,7 @@ function brother_card (name, pc, year, major, linkedin) {
     var a = document.createElement("a");
     a.setAttribute("class", "fa fa-linkedin");
     a.setAttribute("href", "https://www.linkedin.com/in/" + linkedin);
+	a.setAttribute("target", "_blank");
         
     // build structure
     inner1.appendChild(h4), inner1.appendChild(h5);
