@@ -119,6 +119,20 @@ h2 {
     padding-top: 0px; /* This creates some space between the element and the border. */
 	padding-bottom: 0px;
     border-bottom: 1px solid white; /* This creates the border. Replace black with whatever color you want. */
+	animation: scaleIn 1s ease-in 0.2s forwards;
+	-webkit-animation: scaleIn 1s ease-in 0.2s forwards;
+}
+
+@keyframes scaleIn {
+	0% {
+		transform: scaleX(0);
+		-webkit-transform: scaleX(0)
+	}
+	
+	100% {
+    	transform: scaleX(1);
+		-webkit-transform: scaleX(1)
+ 	 }
 }
 
 #home-header h2 {
@@ -715,6 +729,7 @@ section {
 }
 
 
+
 @keyframes marqueeY {
     0%   { transform: translateY(0); }
     100% { transform: translateY(-10%); }
@@ -866,3 +881,6 @@ section {
     vertical-align: center;
 }
 
+.fade-in {
+	opacity: 0;
+}
