@@ -559,6 +559,11 @@ section {
     text-align: center;
 }
 
+#footer h2{
+	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 28px;
+}
+
 
 .fa {
     z-index: 10;
@@ -891,4 +896,51 @@ section {
   .fade-in {
     opacity: 1;
   }
+}
+
+/*accordion*/
+.question {
+  background-color: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 8px 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid;
+	border-color: #9a9a9a;
+  outline: none;
+  transition: 0.4s;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	display: block;
+	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	box-shadow: 1px 1px 1px .5px #AAAAAA;
+	font-size: 18px;
+}
+
+.open-question, .active-question, .question:hover {
+	color: #800000;
+	border-color: #a9a9a9;
+	font-weight: 700;
+	
+}
+
+.answer {
+  padding: 15px 25px 0px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+	max-height: 0;
+  transition: max-height 0.2s ease-out;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border: 1px solid;
+	border-top: hidden;
+	border-color: #a9a9a9;
+	margin-top: 0px;
+	box-shadow: 1px 1px 1px .5px #AAAAAA;
+	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 15px;
 }
