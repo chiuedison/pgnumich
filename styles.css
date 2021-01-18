@@ -944,3 +944,13 @@ section {
 	font-family: Raleway, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 15px;
 }
+
+.answer a {
+	color: #800000;
+	font-weight: 600;
+}
+
+.answer a:hover {
+	color: #FFCB05;
+}
+
