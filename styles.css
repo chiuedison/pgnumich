@@ -22,7 +22,7 @@ body {
 
 
 h2 {
-    font: normal normal 200 24px Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font: normal normal 200 24px Lato, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 
@@ -207,6 +207,8 @@ h2 {
     float: left;
 
     border-bottom: solid thick #FFCB05;
+	
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 
@@ -235,7 +237,13 @@ h2 {
 }
 
 
+#president a {
+	color: #800000
+}
 
+#president a:hover {
+	color: #FFCB05
+}
 
 
 /*SECTION STYLES*/
@@ -387,7 +395,6 @@ section {
     max-width: 700px;
     
     display: flex;
-    
 }
 
 .schedule-event img {
@@ -804,6 +811,11 @@ section {
     margin: 10px;
 }
 
+.eboard-card h4 {
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 500;
+}
+
 .eboard-card h5 {
     color: #AAAAAA;
     font-size: 14px;
@@ -953,4 +965,3 @@ section {
 .answer a:hover {
 	color: #FFCB05;
 }
-

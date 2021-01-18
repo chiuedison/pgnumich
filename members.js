@@ -58,7 +58,7 @@ function eboard_card (name, title, text, year, linkedin, email) {
     inner1.setAttribute("class", "eboard-card-textbox");
     
     var h4 = document.createElement("h4");
-    h4.innerHTML = name + " '" + year;
+    h4.innerHTML = name;
 
     var h5 = document.createElement("h5");
     h5.innerHTML = title;
