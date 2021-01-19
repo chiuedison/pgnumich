@@ -10,7 +10,7 @@ var eboardemails = document.getElementById("bro-list-eboard-emails");
 eboardnames = eboardnames.innerHTML.toString().split(";");
 eboardtitles = eboardtitles.innerHTML.toString().split(";");
 eboardyears = eboardyears.innerHTML.toString().split(";");
-eboardtexts = eboardtexts.innerHTML.toString().split(";");
+eboardtexts = eboardtexts.innerHTML.toString().split(":");
 eboardlinkedins = eboardlinkedins.innerHTML.toString().split(";");
 eboardemails = eboardemails.innerHTML.toString().split(";");
 
